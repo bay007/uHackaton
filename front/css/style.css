@@ -1,3 +1,14 @@
+.title {
+  margin: 20px 0;
+}
+
+.title .text {
+  text-align: center;
+}
+
+h1 {
+  margin: 0 auto;
+}
 .jumbotron {
   padding: 20px;
   margin-top: 20px;
