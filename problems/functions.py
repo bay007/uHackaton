@@ -2,7 +2,7 @@ def f():
     pass
 
 
-list_problems = [
+LIST_PROBLEMS = [
     {
         "enunciado": "Función que retorne los números primos del 0 al 100",
         "funcion_valicacion": f

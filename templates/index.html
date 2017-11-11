@@ -2,15 +2,16 @@
 {% block title %}Problems{% endblock title %}
 {% block content %}
 
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
       <div class="jumbotron">
         <h2>
-          PREGUNTA No. 1
+          PREGUNTA...
         </h2>
         <p>
-          Función que retorne los números primos del 0 al 100
+          {{enunciado}}
         </p>
 
         <form class="form-horizontal" role="form">
@@ -33,6 +34,9 @@
     </div><!--.col-md-12-->
   </div><!--.row-->
 </div><!--.container-fluid-->
+
+
+{% if respuesta_correcta %}
 <div class="container-fluid" id="correcto">
   <div class="row">
     <div class="col-sm-12">
@@ -43,6 +47,9 @@
     </div><!--.col-sm-10-->
   </div><!--.row-->
 </div><!--#correcto-->
+{% endif %}
+
+{% if respuesta_incorrecta %}
 <div class="container-fluid" id="incorrecto">
   <div class="row">
     <div class="col-sm-12">
@@ -55,5 +62,5 @@
   </div><!--.row-->
 </div><!--#correcto-->
 </div>
-
+{% endif %}
 {% endblock content %}
