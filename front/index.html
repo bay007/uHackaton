@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MiniHackaton Dev.f</title>
+
+    <meta name="description" content="MiniHackaton Dev.f">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <h2>
+            PREGUNTA No. 1
+          </h2>
+          <p>
+            Función que retorne los números primos del 0 al 100
+          </p>
+          
+          <form class="form-horizontal" role="form">           
+            <p>Tu respuesta</p>
+            <label for="inputRespuesta" class="col-sm-2 control-label" style="display:none">
+              Tu Respuesta
+            </label>
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="inputRespuesta" />
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-primary btn-large">
+                  Enviar
+                </button>
+              </div>
+            </div><!--form-group-->
+          </form>
+        </div><!--.jumbotron-->
+      </div><!--.col-md-12-->
+    </div><!--.row-->
+  </div><!--.container-fluid-->
+  <div class="container-fluid" id="correcto">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="jumbotron">
+          <p>Respuesta Correcta</p>
+          <a class="btn btn-primary btn-large" href="pregunta2.html">Siguiente Problema</a>
+        </div><!--.jumbotron-->
+      </div><!--.col-sm-10-->
+    </div><!--.row-->
+  </div><!--#correcto-->
+  <div class="container-fluid" id="incorrecto">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="jumbotron">
+          <p>Respuesta Incorrecta</p>
+          <a class="btn btn-primary btn-large reintentar" href="#">Reintentar</a>
+          <a class="btn btn-primary btn-large" href="pregunta2.html">Siguiente Problema</a>
+        </div><!--.jumbotron-->
+      </div><!--.col-sm-10-->
+    </div><!--.row-->
+  </div><!--#correcto-->
+</div>
+</body>
